@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+		background-color: #1b1b32;
+		text-align: center;
+		color: #f5f6f7;
+	}
+	hr {
+		border-color: white;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Exercícios</title>
+	<script src="lib/013_raizquadrada.js"></script>
+</head>
+<body>	
+	<h1>Exercício 13</h1>
+	<h2>13. Escreva um programa que solicita um número ao usuário e retorna a sua raiz quadrada.</h2>
+	<hr noshade="noshade">
+</body>
+<script type="text/javascript">
+// Váriaveis
+	var numero, raiz, entrada, mensagem;
+
+// Declarar váriaveis
+	entrada = window.prompt("Digite um número: ");
+	numero = Number(entrada);
+
+// Processamento de dados
+	raiz = raizQuadrada(numero);
+	mensagem = "A raíz quadrada de " + numero + " é igual a: " + raiz;
+
+// Saída de dados
+	document.write(mensagem);
+
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+		background-color: #1b1b32;
+		text-align: center;
+		color: #f5f6f7;
+	}
+	hr {
+		border-color: white;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Exercícios</title>
+	<script src="lib/016_volumeesfera.js"></script>
+</head>
+<body>	
+	<h1>Exercício 16</h1>
+	<h2>16. Escreva um programa que solicita ao usuário o raio de uma esfera e retorna o volume da esfera.</h2>
+	<hr noshade="noshade">
+</body>
+<script type="text/javascript">
+// Váriaveis
+	var raio, volume, entrada, mensagem;
+
+// Declarar váriaveis
+	entrada = window.prompt("Digite o valor do raio da esfera: ");
+	raio = Number(entrada);
+
+// Processamento de dados
+	volume = volumeEsfera(raio);
+	if(volume >= 100) {
+		volume = volume/100;
+		mensagem = "O volume da esfera é igual a: " + volume + "m³";
+	}
+	else if(volume < 100) {
+		mensagem = "O volume da esfera é igual a: " + volume + "cm³";
+	}
+// Saída de dados
+	document.write(mensagem);
+
+</script>
+</html>

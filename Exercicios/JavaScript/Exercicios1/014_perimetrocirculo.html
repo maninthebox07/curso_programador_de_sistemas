@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+		background-color: #1b1b32;
+		text-align: center;
+		color: #f5f6f7;
+	}
+	hr {
+		border-color: white;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Exercícios</title>
+	<script src="lib/014_perimetrocirculo.js"></script>
+</head>
+<body>	
+	<h1>Exercício 14</h1>
+	<h2>14. Escreva um programa que calcula o perímetro de um círculo. Solicite ao usuário que insira o raio.</h2>
+	<hr noshade="noshade">
+</body>
+<script type="text/javascript">
+// Váriaveis
+	var raio, perimetro, entrada, mensagem;
+
+// Declarar váriaveis
+	entrada = window.prompt("Digite o valor do raio: ");
+	raio = Number(entrada);
+
+// Processamento de dados
+	perimetro = perimetroCirculo(raio);
+	if(perimetro >= 100) {
+		perimetro = perimetro / 100;
+		mensagem = "O perímetro do circulo é igual a: " + perimetro + "m";
+	}
+	else if(perimetro < 100) {
+		mensagem = "O perímetro do circulo é igual a: " + perimetro + "cm";
+	}
+
+// Saída de dados
+	document.write(mensagem);
+
+</script>
+</html>

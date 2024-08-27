@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+		background-color: #1b1b32;
+		text-align: center;
+		color: #f5f6f7;
+	}
+	hr {
+		border-color: white;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Exercícios</title>
+	<script src="lib/015_temperatura.js"></script>
+</head>
+<body>	
+	<h1>Exercício 15</h1>
+	<h2>15. Escreva um programa que solicita ao usuário a temperatura em Celsius e retorna a temperatura em
+Fahrenheit.</h2>
+	<hr noshade="noshade">
+</body>
+<script type="text/javascript">
+// Váriaveis
+	var celsius, fahrenheit, entrada, mensagem;
+
+// Declarar váriaveis
+	entrada = window.prompt("Digite o valor da temperatura em celsius: ");
+	celsius = Number(entrada);
+
+// Processamento de dados
+	fahrenheit = temperatura(celsius);
+	mensagem = celsius + "ºC " + "em Farenheit é igual a: " + fahrenheit + "°F";
+// Saída de dados
+	document.write(mensagem);
+
+</script>
+</html>

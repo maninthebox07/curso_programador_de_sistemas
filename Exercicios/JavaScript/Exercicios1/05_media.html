@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+		background-color: #1b1b32;
+		text-align: center;
+		color: #f5f6f7;
+	}
+	hr {
+		border-color: white;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Exercícios</title>
+	<script src="lib/05_media.js"></script>
+</head>
+<body>	
+	<h1>Exercício 5</h1>
+	<h2>5. Escreva um programa que solicita três números ao usuário e retorna a média deles.</h2>
+	<hr noshade="noshade">
+</body>
+<script type="text/javascript">
+// Váriaveis
+	var num1, num2, num3, media, entrada, mensagem;
+
+// Declarar váriaveis
+	entrada = window.prompt("Digite um número: ");
+	num1 = Number(entrada);
+	entrada = window.prompt("Digite outro número: ");
+	num2 = Number(entrada);
+	entrada = window.prompt("Digite mais outro número: ");
+	num3 = Number(entrada);
+// Processamento de dados
+	media = Media(num1,num2,num3);
+	mensagem = "A média  de " + num1 + ", " + num2 + " e " + num3 + " é igual a: " + media;
+
+// Saída de dados
+	document.write(mensagem);
+	
+</script>
+</html>

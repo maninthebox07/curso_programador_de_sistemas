@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+		background-color: #1b1b32;
+		text-align: center;
+		color: #f5f6f7;
+	}
+	hr {
+		border-color: white;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Exercícios</title>
+	<script src="lib/04_produto.js"></script>
+</head>
+<body>	
+	<h1>Exercício 4</h1>
+	<h2>4. Escreva um programa que solicita dois números e imprime o resultado da multiplicação entre os
+números.</h2>
+	<hr noshade="noshade">
+</body>
+<script type="text/javascript">
+// Váriaveis
+	var num1, num2, produto, entrada, mensagem;
+
+// Declarar váriaveis
+	entrada = window.prompt("Digite um número: ");
+	num1 = Number(entrada);
+	entrada = window.prompt("Digite outro número: ");
+	num2 = Number(entrada);
+// Processamento de dados
+	produto = multiplicacao(num1,num2);
+	mensagem = "A multiplicação de " + num1 + " e " + num2 + " é igual a: " + produto;
+
+// Saída de dados
+	document.write(mensagem);
+	
+</script>
+</html>

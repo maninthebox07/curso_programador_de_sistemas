@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+		background-color: #1b1b32;
+		text-align: center;
+		color: #f5f6f7;
+	}
+	hr {
+		border-color: white;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Exercícios</title>
+	<script src="lib/012_dobro.js"></script>
+</head>
+<body>	
+	<h1>Exercício 12</h1>
+	<h2>12. Escreva um programa que solicita um número ao usuário e imprime o seu dobro.</h2>
+	<hr noshade="noshade">
+	<p>Resposta no console.</p>
+</body>
+<script type="text/javascript">
+// Váriaveis
+	var numero, dobro, entrada;
+
+// Declarar váriaveis
+	entrada = window.prompt("Digite um número: ");
+	numero = Number(entrada);
+
+// Processamento de dados
+	dobro = Dobro(numero);
+	mensagem = "O dobro de " + numero + " é igual a: " + dobro;
+
+// Saída de dados
+	console.log(mensagem);
+
+</script>
+</html>
