@@ -3,9 +3,7 @@ function contarVogais(str) {
     let count = 0;
 
     for(let i=0; i<str.length; i++) {
-        let char = str.charAt(i);
-
-        switch(char) {
+        switch(str.charAt(i)) {
             case "a":
             case "e":
             case "i":
