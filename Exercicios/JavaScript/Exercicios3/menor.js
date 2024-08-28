@@ -3,15 +3,8 @@
 function encontrarMenor(x, y, z){
 	let menor;
 
-	if(x < y) {
-		menor = x;
-	} else {
-		menor = y;
-	}
-
-	if(z < menor) {
-		menor = z;
-	}
+	x < y ? menor = x : menor = y;
+	z < menor ? menor = z : menor = menor;
 
 	return menor;
 }

@@ -3,15 +3,8 @@
 function encontrarMaior(x, y, z){
 	let maior;
 
-	if(x > y) {
-		maior = x;
-	} else {
-		maior = y;
-	}
-
-	if(z > maior) {
-		maior = z;
-	}
+	x > y ? maior = x : maior = y;
+	z > maior ? maior = z : maior = maior;
 
 	return maior;
 }

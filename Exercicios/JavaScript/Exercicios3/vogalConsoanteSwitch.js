@@ -6,7 +6,6 @@ function vogalOuConsoante(char) {
 		case "o":
 		case "u":
 			return "Vogal";
-			break;
 	}
 	return "Consoante";
 }

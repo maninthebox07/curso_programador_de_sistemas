@@ -3,11 +3,7 @@
 function vogalOuConsoante(letra){
 	let vogal = ["a", "e", "i", "o", "u"];
 
-	if(vogal.includes(letra)) {
-		return "Vogal";
-	} else {
-		return "Consoante";
-	}
+	return vogal.includes(letra) ? "Vogal" : "Consoante";
 }
 
 // C1
