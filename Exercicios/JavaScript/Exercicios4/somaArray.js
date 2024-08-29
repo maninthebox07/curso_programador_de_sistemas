@@ -1,9 +1,6 @@
 // 9. Calcule a soma dos números de um array.
-function somaArray(array) {
-	const initValue = 0;
-	
-	return array.reduce((accum, curr) => accum + curr, initValue);
-}
+const {somaArray} = require("./modulo");
+
 // C1
 console.log(somaArray([1, 2, 3, 4, 5]) == 15); // 15
 // C2
