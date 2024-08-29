@@ -5,5 +5,5 @@ function somaPares(array) {
 	
 	return arrayPar.reduce((accum, curr) => accum + curr, initValue);
 }
-
-module.exports = somaPares;
+const lib = {somaPares};
+module.exports = lib;
