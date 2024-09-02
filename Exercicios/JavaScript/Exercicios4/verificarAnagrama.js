@@ -1,15 +1,8 @@
 // 19. Desafio Verifique se uma string é um anagrama de outra.
-function verificarAnagrama(str, str2) {
-	if(str.length != str2.length) return false;
-
-    let a = str.split('').sort().join('');
-    let b = str2.split('').sort().join('');
-
-    return a == b ? true : false;
-}
+const {verificarAnagrama} = require("./modulo");
 // C1
-console.log(verificarAnagrama("listen", "silent")); // true
+console.log(verificarAnagrama("listen", "silent") === true); // true
 // C2
-console.log(verificarAnagrama("hello", "world")); // false
+console.log(verificarAnagrama("hello", "world") === false); // false
 // C3
-console.log(verificarAnagrama("evil", "vile")); // true
+console.log(verificarAnagrama("evil", "vile") === true); // true

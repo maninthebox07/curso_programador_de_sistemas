@@ -1,12 +1,8 @@
 // 16. Desafio Verifique se uma string é um palíndromo.
-function verificarPalindromo(str) {
-	strInverse = Array.from(str).reverse().join("");
-
-	return strInverse === str ? true : false;
-}
+const {verificarPalindromo} = require("./modulo");
 // C1
-console.log(verificarPalindromo("racecar")); // true
+console.log(verificarPalindromo("racecar") === true); // true
 // C2
-console.log(verificarPalindromo("hello")); // false
+console.log(verificarPalindromo("hello") === false); // false
 // C3
-console.log(verificarPalindromo("madam")); // true
+console.log(verificarPalindromo("madam") === true); // true
