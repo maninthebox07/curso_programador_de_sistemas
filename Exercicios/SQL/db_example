@@ -1,0 +1,57 @@
+DROP TABLE IF EXISTS cursos;
+
+CREATE TABLE cursos (
+    id INTEGER PRIMARY KEY,
+    nome VARCHAR(255),
+    periodo VARCHAR(31)
+);
+
+INSERT INTO cursos (id, nome, periodo) VALUES
+(1, "Programador de Sistemas", "Vespertino"),
+(2, "Desenvolvedora Front-end", "Noturno"),
+(3, "Analista de Sistemas", "Vespertino"),
+(4, "Gerente de Projetos", "Matutino"),
+(5, "Programador Web", "Noturno"),
+(6, "Designer Gráfico", "Matutino"),
+(7, "Arquiteto de Software", "Matutino"),
+(8, "Analista de QA", "Vespertino");
+
+
+DROP TABLE IF EXISTS alunos;
+CREATE TABLE alunos (
+    id INTEGER PRIMARY KEY, 
+    nome VARCHAR(255),
+    curso_id INTEGER,
+    idade INTEGER,
+    cpf CHAR(14),
+    genero VARCHAR(63),
+    telefone VARCHAR(18),
+    email VARCHAR(255)
+);
+
+INSERT INTO alunos (id, nome, curso_id, idade, cpf, genero, telefone, email) VALUES
+(1, "Fulano", 1, 34, "012.345.678-90", "Masculino", "(62)98765-4321", "fulaninho.maverick@gmail.com"),
+(2, "Ana Costa", 2, 28, "123.456.789-01", "Feminino", "(21)99876-5432", "ana.costa@gmail.com"),
+(3, "Carlos Silva", 3, 32, "234.567.890-12", "Masculino", "(11)91234-5678", "carlos.silva@gmail.com"),
+(4, "Beatriz Oliveira", 4, 30, "345.678.901-23", "Feminino", "(31)92345-6789", "beatriz.oliveira@gmail.com"),
+(5, "Daniel Almeida", 5, 26, "456.789.012-34", "Masculino", "(41)93456-7890", "daniel.almeida@gmail.com"),
+(6, "Fernanda Santos", 6, 29, "567.890.123-45", "Feminino", "(51)94567-8901", "fernanda.santos@gmail.com"),
+(7, "Eduardo Pereira", 7, 35, "678.901.234-56", "Masculino", "(61)95678-9012", "eduardo.pereira@gmail.com"),
+(8, "Juliana Martins", 8, 27, "789.012.345-67", "Feminino", "(71)96789-0123", "juliana.martins@gmail.com"),
+(9, "Ricardo Lima", 1, 31, "890.123.456-78", "Masculino", "(81)97890-1234", "ricardo.lima@gmail.com"),
+(10, "Mariana Ferreira", 6, 33, "901.234.567-89", "Feminino", "(91)98901-2345", "mariana.ferreira@gmail.com"),
+(11, "Lucas Rodrigues", 7, 28, "012.345.678-91", "Masculino", "(21)90012-3456", "lucas.rodrigues@gmail.com");
+
+UPDATE alunos
+SET idade = 40, email = "old.maverick@gmail.com"
+WHERE id = 1;
+
+DELETE FROM alunos WHERE id = 2;
+DELETE FROM alunos WHERE genero = "Masculino";
+
+-- UPDATE alunos
+-- SET curso = "Analista de Sistemas";
+
+SELECT alunos.nome, idade, cursos.nome AS curso 
+FROM alunos JOIN cursos 
+ON alunos.curso_id = cursos.id;
